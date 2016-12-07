@@ -45,7 +45,8 @@ function search(){
 	//遍历$staff多维数组，查找key值为number的员工是否存在，如果存在，则修改返回结果
 	foreach ($staff as $value) {
 		if ($value["number"] == $number) {
-			$result = '{"success":true,"msg":"找到员工：员工编号：' . $value["number"] . 
+			$result = '{"success":true,
+							"msg":"找到员工：员工编号：' . $value["number"] . 
 							'，员工姓名：' . $value["name"] . 
 							'，员工性别：' . $value["sex"] . 
 							'，员工职位：' . $value["job"] . '"}';
