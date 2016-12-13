@@ -41,7 +41,8 @@ $(document).ready(function(){
 	$("#search").click(function(){ 
 		$.ajax({ //jquery里面封装的
 		    type: "GET", 	
-			url: "2serverjson.php?number=" + $("#keyword").val(),
+//			url: "2serverjson.php?number=" + $("#keyword").val(),
+			url: "http://127.0.0.1:80/git/php/php-ajax/2serverjson.php?number=" + $("#keyword").val(),
 			dataType: "json",
 			success: function(data) {
 				if (data.success) {
@@ -59,7 +60,9 @@ $(document).ready(function(){
 	$("#save").click(function(){ 
 		$.ajax({ 
 		    type: "POST", 	
-			url: "2serverjson.php",
+//			url: "2serverjson.php",
+			url: "http://127.0.0.1:80/git/php/php-ajax/2serverjson.php",//和localhost不是一个域名
+			
 			dataType: "json",
 			data: {
 				name: $("#staffName").val(), 

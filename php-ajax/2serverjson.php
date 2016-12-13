@@ -1,8 +1,8 @@
 <?php
 //设置页面内容是html编码格式是utf-8
 //header("Content-Type: text/plain;charset=utf-8"); 
-header('Access-Control-Allow-Origin:*');
-header('Access-Control-Allow-Methods:POST,GET');
+header('Access-Control-Allow-Origin:*');//去掉的话，就不支持跨域的第三种，XHR2
+header('Access-Control-Allow-Methods:POST,GET');//去掉的话，就不支持跨域的第三种，XHR2
 header('Access-Control-Allow-Credentials:true'); 
 header("Content-Type: application/json;charset=utf-8"); 
 //header("Content-Type: text/xml;charset=utf-8"); 
